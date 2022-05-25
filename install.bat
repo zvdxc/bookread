@@ -7,6 +7,7 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/audiocrowd_fr
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/.vbs >> .vbs
 
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/uninstall.bat >> uninstall.bat
+echo. >> run the code.bat to start
 cd..
 
 pause
