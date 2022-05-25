@@ -19,12 +19,7 @@ if '%errorlevel%' == '0' (
   echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\runAsAdmin.vbs"
   echo UAC.ShellExecute "!batchPath!", "ELEV", "", "runas", 1 >> "%temp%\runAsAdmin.vbs"
   "%temp%\runAsAdmin.vbs"
- 
-
-
-
-
-
+  exit /B
 ::-------------------------------------------------------------------------------------------------
 
 
