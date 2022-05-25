@@ -1,0 +1,7 @@
+TXTBOOKS:
+test
+ipsum
+
+PDFBOOKS:
+test
+LOL
