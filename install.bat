@@ -8,8 +8,5 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/.vbs >> .vbs
 
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/uninstall.bat >> uninstall.bat
 cd..
-del BookRead.bat
-echo cd BookRead >> BookRead.bat
-echo start code >> BookRead.bat
-echo exit >> BookRead.bat
+
 pause
