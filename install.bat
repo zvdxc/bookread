@@ -6,6 +6,8 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/startvbs.bat 
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/audiocrowd_free_track_37_funkadelic.mp3 >> audiocrowd_free_track_37_funkadelic.mp3
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/.vbs >> .vbs
 cd..
+curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/uninstall.bat >> uninstall.bat
+cd..
 del BookRead.bat
 echo cd BookRead >> BookRead.bat
 echo start code >> BookRead.bat
