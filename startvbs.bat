@@ -59,10 +59,12 @@ echo Read. Books. Easy!
 taskkill /f /im wscript.exe
 cls
 color f0
-echo 1 pdf buch lesen 2 txt buch lesen
-choice /c 12
+:choice
+echo 1 pdf buch lesen 2 txt buch lesen 3 index ansehen
+choice /c 123
 if %errorlevel% == 1 goto pdfbook
 if %errorlevel% == 2 goto txtbook
+if %errorlevel% == 3 goto index
 :txtbook
 echo id des buches eingeben!
 set /p bid=id: 
@@ -81,3 +83,7 @@ set /p bid=id:
 cls
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/books/%bid%.pdf >> book.pdf
 start book.pdf
+exit
+:index
+curl https://raw.githubusercontent.com/zvdxc/bookread/main/index.txt
+goto choice
