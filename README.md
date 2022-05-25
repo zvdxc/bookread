@@ -1,2 +1,2 @@
 # bookread
-setup file is install.exe
+setup file is install.bat
