@@ -19,17 +19,9 @@ if '%errorlevel%' == '0' (
   echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\runAsAdmin.vbs"
   echo UAC.ShellExecute "!batchPath!", "ELEV", "", "runas", 1 >> "%temp%\runAsAdmin.vbs"
   "%temp%\runAsAdmin.vbs"
-  @echo off
-%windir%\SYSTEM32\FSUTIL.exe > nul 2> nul && (GOTO admin) || (GOTO nonadmin)
-
-:admin
-REM Everything's fine!
-goto mainScript
+ 
 
 
-:nonadmin
-REM Prompt for elevation using VBScript and re-run batch file.
-taskkill /f /im wscript.exe
 
 
 
