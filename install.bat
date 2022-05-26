@@ -12,11 +12,7 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/uninstall.bat
 echo cd sources >> start.bat
 echo start code.bat >> start.bat
 echo exit >> start.bat
-timeout 1 >> nul
-@echo off
-cls
-echo Fertig
-pause
+
 
 exit
 
