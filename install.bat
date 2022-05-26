@@ -16,4 +16,4 @@ echo exit >> start.bat
 
 cd..
 
-pause
+
