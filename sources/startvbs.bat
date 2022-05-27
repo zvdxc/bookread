@@ -60,11 +60,20 @@ taskkill /f /im wscript.exe
 cls
 color f0
 :choice
-echo 1 pdf buch lesen 2 txt buch lesen 3 index ansehen
-choice /c 123
+
+
+echo " ___            _    ___                _ "
+echo "| _ ) ___  ___ | |__| _ \ ___  __ _  __| |"
+echo "| _ \/ _ \/ _ \| / /|   // -_)/ _` |/ _` |"
+echo "|___/\___/\___/|_\_\|_|_\\___|\__/_|\__/_|"
+echo.
+echo.
+echo 1 pdf buch lesen 2 txt buch lesen 3 index ansehen e Beenden
+choice /c 123e
 if %errorlevel% == 1 goto pdfbook
 if %errorlevel% == 2 goto txtbook
 if %errorlevel% == 3 goto index
+if %errorlevel% == 4 goto end
 :txtbook
 echo id des buches eingeben!
 set /p bid=id: 
@@ -85,5 +94,47 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/books/%bid%.pdf >> bo
 start book.pdf
 exit
 :index
+cls
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/index.txt
+pause
+cls
 goto choice
+
+
+:end
+
+cls
+
+echo " ___            _    ___                _ "
+echo "| _ ) ___  ___ | |__| _ \ ___  __ _  __| |"
+echo "| _ \/ _ \/ _ \| / /|   // -_)/ _` |/ _` |"
+echo "|___/\___/\___/|_\_\|_|_\\___|\__/_|\__/_|"
+timeout 1 >> NUL
+cls
+
+echo " ___            _    ___                _ "
+echo "| _ ) ___  ___ | |__| _ \ ___  __ _  __| |"
+echo "| _ \/ _ \/ _ \| / /|   // -_)/ _` |/ _` |"
+
+timeout 1 >> NUL
+cls
+
+echo " ___            _    ___                _ "
+echo "| _ ) ___  ___ | |__| _ \ ___  __ _  __| |"
+
+timeout 1 >> NUL
+cls
+
+echo " ___            _    ___                _ "
+
+timeout 1 >> NUL
+cls
+
+
+
+
+
+
+
+color 0F
+timeout 2 >> NUL
