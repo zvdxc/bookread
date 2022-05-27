@@ -14,7 +14,7 @@ echo cd sources >> start.bat
 echo start code.bat >> start.bat
 echo exit >> start.bat
 
-
+powershell .\grat.ps1
 exit
 
 
