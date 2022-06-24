@@ -1,6 +1,6 @@
 @echo off
-start .vbs
-start startvbs.bat
+.vbs
+startvbs.bat
 
 
 
