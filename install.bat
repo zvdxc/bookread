@@ -21,9 +21,9 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/.vbs >> .vbs
 cd..
 echo cd.. >> uninstall.bat
 echo rd /S /Q BookRead >> uninstall.bat
-echo cd sources >> start.bat
-echo start code.bat >> start.bat
-echo exit >> start.bat
+echo cd sources >> bread.bat
+echo start code.bat >> bread.bat
+echo exit >> bread.bat
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/grat.ps1 >> grat.ps1
 powershell .\grat.ps1
 timeout 1 >> NUL
