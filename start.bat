@@ -31,7 +31,7 @@ del grat.ps1
 cls
 title Complete!
 echo complete
-echo use bread.bat in bookread folder to start
+echo use bread.bat in bookread folder to start!
 pause
 exit
 
