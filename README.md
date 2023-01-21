@@ -1,2 +1,3 @@
 # bookread
-setup file is install.bat
+setup file is start.bat
+to start use bread.bat
