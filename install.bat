@@ -1,4 +1,14 @@
-
+@echo off
+echo BOOKREAD INSTALLER 1.0
+title BOOKREAD INSTALLER 1.0
+echo Proceed?
+choice
+if %errorlevel% == 1 goto i
+echo cancelled
+exit
+:i
+echo Installing.....
+title Installing.....
 rd /S /Q BookRead
 md BookRead
 cd BookRead
@@ -18,6 +28,10 @@ curl https://raw.githubusercontent.com/zvdxc/bookread/main/sources/grat.ps1 >> g
 powershell .\grat.ps1
 timeout 1 >> NUL
 del grat.ps1
+cls
+title Complete!
+echo complete
+pause
 exit
 
 
