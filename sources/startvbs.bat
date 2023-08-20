@@ -60,7 +60,7 @@ taskkill /f /im wscript.exe
 cls
 color f0
 :choice
-
+cls
 
 echo " ___            _    ___                _ "
 echo "| _ ) ___  ___ | |__| _ \ ___  __ _  __| |"
@@ -81,9 +81,12 @@ set /p bid=id:
 cls
 
 curl https://raw.githubusercontent.com/zvdxc/bookread/main/books/%bid%.txt
-:r
-goto r
-
+echo.
+echo ---------------
+echo press Q to exit
+echo ---------------
+choice /N /c Q 
+goto choice
 :pdfbook
 
 del book.pdf >> NUL
