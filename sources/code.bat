@@ -1,5 +1,5 @@
 @echo off
-.vbs
+start .vbs
 startvbs.bat
 
 
